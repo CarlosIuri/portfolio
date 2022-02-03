@@ -2,15 +2,6 @@
   height: 100vh;
 }
 
-@media (max-width: 800px) {
-  .apresentacao {
-    height: 90vh;
-  }
-  .apresentacao {
-    height: 80vh;
-  }
-}
-
 .apresentacao-container {
   max-width: 1920px;
   margin: 0 auto;
@@ -27,6 +18,12 @@
   margin-top: 40px;
 }
 
+.apresentacao-nome p {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .apresentacao-nome h1 {
   font-size: 6rem;
   font-weight: bold;
@@ -38,16 +35,10 @@
   font-size: 4rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.apresentacao-nome p {
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.btn {
+.apresentacao-nome .btn {
   width: 200px;
   height: 100px;
   background-color: transparent;
@@ -98,6 +89,9 @@
 }
 
 @media (max-width: 800px) {
+  .apresentacao {
+    height: 80vh;
+  }
   .apresentacao-nome h2 {
     font-size: 3.5rem;
   }
@@ -115,6 +109,23 @@
   }
 }
 
+@media (max-width: 499px) {
+  .apresentacao {
+    height: 70vh;
+  }
+  .apresentacao-nome h2 {
+    font-size: 1.5rem;
+  }
+  .apresentacao-nome h1 {
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+
 // ----------------------------------------------------------------------------------------------------
 
 .apresentacao-tecnologias {
@@ -127,29 +138,9 @@
   font-weight: 700;
   flex: 1;
   position: relative;
-  padding: 20px;
+  padding: 0px;
   opacity: 1;
   margin-top: 40px;
-}
-
-@media (max-width: 1200px) {
-  .apresentacao-tecnologias {
-    margin-top: 0;
-    padding: 0;
-    display: flex;
-  }
-}
-
-@media (max-width: 800px) {
-  .apresentacao-tecnologias {
-    font-size: 4.5rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .apresentacao-tecnologias {
-    font-size: 3rem;
-  }
 }
 
 .apresentacao-tecnologias .html {
@@ -198,18 +189,6 @@
     0 0 25px #3b7638, 0 0 30px #3b7638;
 }
 
-@media (max-width: 1200px) {
-  .apresentacao-tecnologias .html,
-  .apresentacao-tecnologias .css,
-  .apresentacao-tecnologias .js {
-    position: initial;
-  }
-  .apresentacao-tecnologias .css,
-  .apresentacao-tecnologias .js {
-    margin-left: 100px;
-  }
-}
-
 .apresentacao-tecnologias .html:hover {
   transform: scale(1.1);
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
@@ -229,4 +208,50 @@
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
     0 0 25px #fff, 0 0 30px #3b7638, 0 0 35px #3b7638, 0 0 40px #3b7638,
     0 0 45px #3b7638, 0 0 50px #3b7638;
+}
+
+
+@media (max-width: 1200px) {
+  .apresentacao-tecnologias {
+    padding: 0;
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .apresentacao-tecnologias {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .apresentacao-tecnologias {
+    font-size: 3rem;
+  }
+}
+
+
+@media (max-width: 499px) {
+  .apresentacao-tecnologias {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .apresentacao-tecnologias .html,
+  .apresentacao-tecnologias .css,
+  .apresentacao-tecnologias .js {
+    position: initial;
+  }
+  .apresentacao-tecnologias .css,
+  .apresentacao-tecnologias .js {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .apresentacao-tecnologias .css,
+  .apresentacao-tecnologias .js {
+    margin-left: 80px;
+  }
 }
