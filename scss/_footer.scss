@@ -22,6 +22,7 @@
     border-left: 4px solid #5465FF;
     display: flex;
     flex-direction: column;
+    align-self: center;
     gap: 20px;
 }
 
@@ -32,9 +33,7 @@
 
 .footer-conteudo .footer-redes .icone:hover{
     transform: scale(1.5);
-
 }
-
 
 .footer-conteudo .footer-redes a{
     margin-left: 20px;
@@ -47,7 +46,7 @@
     }
 
     .footer-conteudo{
-     flex-direction: column;
+        flex-direction: column;
     }
 
     .footer-conteudo .footer-redes{
@@ -56,6 +55,5 @@
         border-left: none;
         flex-direction: row;
         gap: 0;
-        align-self: center;
     }
 }
